@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styleMain.css">
+    <link rel="stylesheet" href="css/styleContact.css">
+    <link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Merriweather+Sans|Pacifico" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo/logo16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/logo/logo32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/logo/logo64.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="images/logo/logo128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="images/logo/logo256.png" sizes="256x256" type="image/png">
+    <link rel="icon" href="images/logo/logo310.png" sizes="310x310" type="image/png">
+    <meta property="og:title" content="db Musique" />
+    <title>db Musique - Contact</title>
+</head>
+
+<body>
+    <a class="visually-hidden" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="wrapper">
+            <h1 class="font-effect-shadow-multiple">db Musique<br></h1>
+            <a href="index.html"><img id="logo" src="images/logo/logo64.png" alt=""/></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <ul id="myLinks">
+            <li>
+                <a href="index.html">Accueil</a>
+                <div class="dropdown-content">
+                    <a href="index.html#main">Introduction</a>
+                    <a href="index.html#news">Nouvelles</a>
+                </div>
+            </li>
+            <li>
+                <a href="about.html">Musique</a>
+            </li>
+            <li>
+                <a href="lesson.html">Cours</a>
+                <div class="dropdown-content">
+                    <a href="lesson.html#main">Tarification</a>
+                    <a href="lesson.html#news">Instruments Disponibles</a>
+                </div>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="piano.html">Jeu</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </a>
+    </div>
+
+    <section id="main">
+        <div class="wrapper">
+            <h2>Contact</h2>
+            <form id="contact-form" method="post" action="mail.php" role="form">
+                <fieldset>
+                    <legend id="ambiance">Formulaire de contact<br><br>Veuillez remplir les champs ci-dessous</legend>
+                    <div>
+                        <label class="visually-hidden" for="nom">nom</label>
+                        <input id="nom"  placeholder="Nom" name="nom">
+                    </div>
+                    <div>
+                        <label class="visually-hidden" for="telNo">telephone</label>
+                        <input type="tel" id="telNo" name="telNo" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" placeholder="Tel (555)555-5555">
+                    </div>
+                    <div>
+                        <label class="visually-hidden" for="Courriel">courriel</label>
+                        <input type="email" id="Courriel" placeholder="Courriel" name="courriel">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="message">Votre message : </label>
+                </div>
+                <textarea id="message" rows="10" cols="100" maxlength="300" spellcheck="true" wrap="hard" placeholder="Votre message" name="message"></textarea>
+                <div>
+                    <input type="submit" value="Soumettre" id="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright©2020. Db-musique tous droits réservés.<p>
+    </footer>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/storage.js"></script>
+
+</body>
+</html>

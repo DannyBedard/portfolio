@@ -1,0 +1,89 @@
+/*---------------------------------------*/
+/*NEWS*/
+/*---------------------------------------*/
+
+#news{
+    grid-area: news;
+}
+
+#news .container-fluid {
+    text-align: center;
+}
+
+#news ul {
+    margin-top: 80px;
+    max-width:1500px;
+    display: inline-block;
+}
+
+#news ul li {
+    width: 32%;
+    float: left;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 1%;
+}
+
+#news h3 {
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+
+#news p {
+    margin: 20px;
+}
+
+#news-1 {
+     background: url(../images/nouvelles/pubstpaul.png) no-repeat top center;
+}
+
+#news-2 {
+    background: url(../images/nouvelles/studioBar.jpg) no-repeat top center;
+}
+
+#news-3 {
+    background: url(../images/nouvelles/Meuniere.jpg) no-repeat top center;
+}
+
+#news-4 {
+    background: url(../images/nouvelles/meuniere2.jpg) no-repeat top center;
+}
+
+#news-5 {
+    background: url(../images/nouvelles/studioBar2.jpg) no-repeat top center;
+}
+
+#news-6 {
+    background: url(../images/nouvelles/CEScarre.jpg) no-repeat top center;
+}
+
+#news-7 {
+    background: url(../images/nouvelles/cetteVoixStCome.jpg) no-repeat top center;
+}
+
+#news-8 {
+    background: url(../images/nouvelles/studioBar.jpg) no-repeat top center;
+}
+
+#news-9 {
+    background: url(../images/nouvelles/composition.jpg) no-repeat top center;
+}
+
+/*---------------------------------------*/
+/*RESPONSIVE*/
+/*---------------------------------------*/
+
+@media screen and (max-width:992px){
+    #news ul li {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:700px){
+    #news{
+        display: block;
+    }
+    #news ul li {
+        width: 100%;
+    }
+}

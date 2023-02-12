@@ -1,0 +1,142 @@
+/*---------------------------------------*/
+/*TABLEAU*/
+/*---------------------------------------*/
+
+table {
+    width: 100%;
+    text-align: center;
+    font-family: Merriweather, serif;
+}
+
+th{
+    height: 3em;
+}
+
+thead tr th{
+    padding-top: 2em;
+}
+
+table .prix{
+    font-size: 2.5em;
+    padding-top: 1em;
+}
+
+table .ideal{
+    padding-top: 2em;
+    text-decoration: underline;
+}
+
+table .cours{
+    padding: 1em;
+    padding-bottom: 2em;
+    line-height: 2em;
+    color: rgba(24, 24, 24, 0.84);
+}
+
+tr tbody:hover {
+    background-color: #005b96;
+}
+
+thead, tfoot{
+    background-color: #6497b1;
+    border: 1px solid black;
+    border-bottom: 0.5em solid #005b96;
+    font-size: 1.5rem;
+}
+
+table, th, td {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/*---------------------------------------*/
+/*NEWS*/
+/*---------------------------------------*/
+
+#news{
+    grid-area: news;
+}
+
+#news .wrapper {
+    text-align: center;
+}
+
+#news ul {
+    margin-top: 80px;
+    max-width:1500px;
+    display: inline-block;
+}
+
+#news ul li {
+    width: 32%;
+    float: left;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 1%;
+}
+
+#news h3 {
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+
+#news p {
+    margin: 20px;
+}
+
+#piano {
+    background: url("../images/cours/Courspiano2.jpg") no-repeat top center;
+}
+
+#guitare {
+    background: url(../images/cours/guitareCours.jpg) no-repeat top center;
+}
+
+#basse {
+    background: url(../images/cours/basseCours.jpg) no-repeat top center;
+}
+
+#batterie {
+    background: url(../images/cours/drum.jpg) no-repeat top center;
+}
+
+#chant {
+    background: url(../images/cours/chantCours.jpg) no-repeat top center;
+}
+
+#prod {
+    background: url(../images/cours/studio2.jpg) no-repeat top center;
+}
+
+/*---------------------------------------*/
+/*RESPONSIVE*/
+/*---------------------------------------*/
+
+@media screen and (max-width:992px){
+    #news{
+        display: block;
+        grid-area: news;
+        margin-top: 200px;
+    }
+    #news ul li {
+        width: 100%;
+    }
+
+    /*---------------------------------------*/
+    /*TABLEAU*/
+    /*---------------------------------------*/
+
+    table .ideal {
+        display: none;
+    }
+
+    table .cours {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #news {
+        margin-top: 350px;
+    }
+}
