@@ -1,0 +1,110 @@
+/*---------------------------------------*/
+/*Contact*/
+/*---------------------------------------*/
+
+main input, textarea, select{
+    border-radius: 0.5em;
+    margin: 1em;
+    text-align: center;
+    height: 3em;
+    border: 1px solid #006d77;
+    color: #006d77;
+}
+
+main input:focus, textarea:focus, select:focus{
+    border: 2px solid #006d77;
+}
+
+textarea{
+    resize: none;
+    height: 10em;
+}
+
+#submit{
+    text-transform: uppercase;
+    border: #006d77 solid 2px;
+    border-radius: 0.5em;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #006d77;
+    margin-bottom: 2em;
+    width: 40em;
+}
+
+#submit:hover {
+     background-color: cadetblue;
+}
+
+fieldset #telNo, #Courriel, #nom, #prenom{
+    width: 40em;
+}
+
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: #005b96; }
+
+#inscription{
+    text-transform: uppercase;
+    border: #000 solid 2px;
+    border-radius: 2em;
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #6497b1;
+    margin-bottom: 10px;
+    width: 20em;
+    display: inline-block;
+}
+
+#inscription:hover {
+    background-color: #005b96;
+}
+
+/*---------------------------------------*/
+/*RESPONSIVE*/
+/*---------------------------------------*/
+
+@media screen and (max-width:992px) {
+
+    fieldset #telNo, #Courriel, #nom{
+        width: 20em;
+    }
+
+    textarea{
+        width: 40em;
+    }
+
+    #submit{
+        width: 30em;
+    }
+
+    .container {
+        display: block;
+    }
+
+    legend{
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    textarea{
+        width: 20em;
+    }
+
+    #checkbox{
+        display: block;
+    }
+
+    #submit, #inscription{
+        width: 15em;
+    }
+}
+
