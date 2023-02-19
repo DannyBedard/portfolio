@@ -1,0 +1,24 @@
+/*---------------------------------------*/
+/*Vidéo/Audio*/
+/*---------------------------------------*/
+
+#main video{
+    width: 400px;
+    height: 400px;
+}
+
+.music{
+    border: solid 1px black;
+    border-radius: 0.5em;
+}
+
+/*---------------------------------------*/
+/*RESPONSIVE*/
+/*---------------------------------------*/
+
+@media screen and (max-width:700px){
+    #main video{
+        width:300px;
+        height: 300px;
+    }
+}

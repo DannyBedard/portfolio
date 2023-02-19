@@ -6,4 +6,4 @@ where: A strange place
 image: imageuh
 ---
 
-test content
+test
